@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+.align {
+    text-align: center;
+}
+.middle {
+    width: 90%;
+    margin: auto;
+}
+
+/* TEXT */
+
+h1,h2,h3,h4 {
+    font-family: 'Poppins', sans-serif;
+    color:hsl(192, 100%, 9%);
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 10rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    color:#a8a8a8;
+}
+
+h4 {
+    font-size: 2.5rem;
+    color:#fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 2rem;
+}
+
+/* Button */
+
+.button {
+    color:#fff;
+    background-color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 5rem;
+    text-align: center;
+    transition: .3s;
+    }
+
+.button:hover {
+    cursor: pointer;
+    color:#fff;
+    background-color: hsl(321, 100%, 78%);
+    border: 1px solid hsl(321, 100%, 78%);
+    transition: .3s;
+}
+
+.big-button {
+    font-weight: bold;
+    display: inline-block;
+    padding: 3.5rem 10rem;
+    margin-bottom: 12rem;
+}
+
+.small-button {
+    color:hsl(322, 100%, 66%);
+    background-color: #fff;
+    border: 1px solid hsl(322, 100%, 66%);
+    padding:1rem 2rem;
+}
+
+/* Header */
+
+#header {
+    width: 95%;
+    margin: 8rem auto 25rem;
+}
+
+.try {
+    margin-left: auto;
+}
+
+/* Section Main */
+
+.main-text {
+    margin: 4rem 35rem 5rem;
+}
+
+.mockups {
+    width: 100%;
+}
+
+.communities {
+    justify-content: space-around;
+    margin:5rem 10rem 0;
+}
+
+
+
+/* Section Image with Text */
+
+.illustration-text {
+    flex:1 1 40rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.illustration {
+    flex:1 1 40rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration-image{
+    height: 50%;
+}
+
+/* Section ready */
+
+#ready {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.ready-header {
+    margin: 4rem 0;
+}
+
+/* Section cooperation */
+
+.cooperation-top-image {
+    width: 100%;
+    display: block;
+}
+
+#cooperation {
+    background-color: rgb(0 37 46);
+    box-shadow: 0px -2px 0 rgb(0 37 46);
+    color:#fff;
+    padding-top: 5rem;
+}
+#cooperation > div {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.cooperation-text {
+    font-size: 1.8rem;
+    padding: 3.5rem 24rem 3.5rem 0;
+}
+
+.phone-email {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.phone {
+    margin-bottom: 1rem;
+}
+
+#email {
+    width: 32rem;
+    height: 5rem;
+    margin-right: 4rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.email-button {
+    border-radius: 0.6rem;
+    width: 16rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+#failed {
+    font-size: 1.5rem;
+    color:red;
+}
+
+/* Socials */
+
+.socials {
+    margin-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.social {
+    width: 3rem;
+}
+
+.social:hover .facebook {
+    fill:rgb(60, 151, 255);
+}
+.social:hover .instagram {
+    fill: #f74444;
+}
+.social:hover .twitter {
+    fill:rgb(0, 225, 255);
+}
+
+.instagram-link {
+    margin: 0 3rem;
+}
+
+/* Footer */
+
+#footer {
+    background-color: hsl(192, 100%, 9%);
+    box-shadow: 0px -2px 0 rgb(0 37 46);
+}
+
+.attribution {
+    color:#fff;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.attribution a {
+    color:#ff52bf;
+}
+
+
+/* Media 1240px */
+
+@media screen and (max-width: 1240px) {
+    .main-text {
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+    .cooperation-text {
+        padding-right: 10rem;
+    }
+    .illustration-image {
+        height: 40%;
+    }
+    #email {
+        width: 25rem;
+    }
+}
+
+/* Media 990px */
+
+@media screen and (max-width: 990px) {
+    .main-text {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .communities {
+        display: block;
+        margin-right: 28rem;
+        margin-left: 28rem;
+    }
+    .communities div h2,
+    .communities div h3 {
+        text-align: center;
+    }
+
+    .msg {
+        margin-right: 0;
+        margin-top: 10rem;
+    }
+
+    .middle {
+        margin-bottom: 10rem;
+    }
+
+    #growTogether,
+    #flowingConversations,
+    #yourUsers {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    #flowingConversations {
+        flex-direction: column;
+    }
+
+    .illustration {
+        width: 100%;
+    }
+    .illustration-image {
+        width: 60%;
+    }
+
+    .illustration-text h1 {
+        margin-bottom: 3rem;
+    }
+
+    .illustration-text p {
+        margin: 0;
+    }
+
+    #ready {
+        margin-bottom: 20rem;
+    }
+
+    #cooperation > .flex {
+        flex-direction: column-reverse;
+    }
+
+    .contact {
+        margin-top: 10rem;
+    }
+    #email {
+        width: 30rem;
+    }
+
+    .socials {
+        text-align: center;
+    }
+}
+
+/* Media 933px  */
+
+@media screen and (max-width: 933px) {
+    .communities {
+        margin-right: 15rem;
+        margin-left: 15rem;
+    }
+}
+
+/* Media 811px  */
+
+@media screen and (max-width: 811px) {
+    .main-text {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+}
+
+/* MEDIA 558px */
+
+@media screen and (max-width: 558px) {
+    .communities {
+    margin-right: 0;
+    margin-left: 0;
+    }
+
+    .cooperation-text {
+        padding-right: 0;
+    }
+
+    #email {
+        width: 100%;
+        border-radius: 7px;
+    }
+
+    .email-button {
+        margin-top: 2rem;
+        float: right;
+    }
+    
+    .attribution {
+        font-size: 1.5rem;
+    }
+}
+
+/* Media 448px  */
+
+@media screen and (max-width: 448px) {
+    .logo {
+        max-width: 50%;
+    }
+    .logo-header {
+        height: auto;
+        max-width: 100%;
+    }
+
+    #header {
+        margin-bottom: 12rem;
+    }
+
+    .main-text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .big-button {
+        padding: 1.5rem 5rem;
+        margin-bottom: 10rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 8rem;
+    }
+
+
+    .illustration-text,
+    .illustration {
+        flex-basis: 20rem;
+    }
+
+    .main-text,
+    .illustration-text p {
+        font-size: 1.5rem;
+    }
+    
+}
+
+/* Media 375px  */
+
+@media screen and (max-width: 375px) {
+    
+
+    .small-button {
+        font-size: 1.5rem;
+        padding: .6rem 3rem;
+    }
+    .attribution {
+        font-size: 1.2rem;
+    }
+}
